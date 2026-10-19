@@ -1,0 +1,16 @@
+http://127.0.0.1:5500/index.html
+
+127.0.0.1:5500
+
+HTTP/2
+
+304 not modified
+
+Cannot GET /promociones.html no se pudo encontrar el archivo local
+
+Roles:
+HTML: Html le dara orden y estructura a la pagina en general, sostendra los titulos, subtitulos, listas organizas y/o desorganizadas, links imagenes etc.
+
+CSS: CSS se encargara de darle estilo a todo lo que contiene la pagina (HTML), haciendo que sea agradable a la vista e interactiva, organizar textos y titulos centrandolos, cambiarlos de color, cambiar el tamaño y forma de las imagenes, agregar animaciones.
+
+JavaScript: JavaScript se encarga de hacer que la pagina no solo sea linda, si no que funcione, hara que el usuario sea capaz de ver a tiempo real en donde estan las ciclas disponibles, que sea capaz de reservarla con su cedula, crear una cuenta e iniciar sesion con sus nombres y correo electronico.
