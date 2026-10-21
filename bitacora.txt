@@ -142,3 +142,14 @@ Campo: Cantidad de bicicletas
 Dato de prueba: Elegir mas de 6 bicicletas
 Resultado esperado: No se puede elegir mas de 6 bicicletas ya que no esta entre las opciones
 Resultado obtenido: No se pudo elegir mas de 6 bicicletas
+
+No se encontraron fallos de Auditoria en ninguna de las 3 paginas
+
+Texto blanco sobre verde ruta: Apto para texto normal
+Texto blanco sobre naranja pedal: Apto para texto normal
+Texto azul noche sobre naraja pedal: Apto para texto normal
+Texto azul noche sobre crema: Apto para texto normal
+Texto gris azfalto sobre crema: Apto solo para texto grande
+Texto verde ruta sobre crema: Apto para texto normal
+Texto naraja pedal sobre crema: No apto para texto
+Tetxo blanco sobre azul noche: Apto para texto normal
