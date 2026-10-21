@@ -17,6 +17,94 @@
 
     <main>
         <section>
+            <header>
+                <h1>Formulario de reserva</h1>
+            </header>
+            <form action="">
+                <h2>Tus datos</h2>
+                <div>
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div>
+                    <label for="documento">Numero de documento</label>
+                    <input type="number" id="documento" name="documento" required>
+                </div>
+
+                <div>
+                    <label for="correo">Correo electronico</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+
+                <div>
+                    <label for="numero">Numero de celular</label>
+                    <input type="number" id="numero" name="numero" required>
+                </div>
+
+                <h2>Tu alquiler</h2>
+                <div>
+                    <label for="fecha">Fecha del alquiler</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+
+                <div>
+                    <label for="tipo">Tipo de bicicleta</label>
+                    <select name="tipo" id="tipo" required>
+                        <option value="mt">Bicicleta de montaña</option>
+                        <option value="urba">Bicicleta urbana</option>
+                        <option value="elec">Bicicleta electrica</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="plan">Plan</label>
+                    <select name="plan" id="plan" required>
+                        <option value="1h">1 hora</option>
+                        <option value="mediod">Medio dia (4 horas)</option>
+                        <option value="1d">Dia completo</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="cantidadbici">Cantidad de bicicletas</label>
+                    <select name="cantidadbici" id="cantidadbici" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="ruta">Ruta</label>
+                    <select name="ruta" id="ruta" required>
+                        <option value="ninguna">Ninguna</option>
+                        <option value="rio">Rio y Parques</option>
+                        <option value="barrio">Sabores de Barrio</option>
+                        <option value="palmas">Retro Las Palmas</option>
+                    </select>
+                </div>
+
+                <h2>Confirmacion</h2>
+                <div>
+                    <label for="comentarios">Dejanos un comentario, puede ser una duda, sugerencia o cosas a tener en cuenta</label><br>
+                    <textarea name="comentarios" id="comentarios"></textarea>
+                </div>
+
+                <div>
+                    <label for="politicas">Aceptacion de las politicas de alquiler</label>
+                    <input type="checkbox" id="politicas" name="politicas" required>
+                </div>
+
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+
+        <section>
             <dl>
                 <dt>Lunes a viernas</dt>
                 <dd>7:00 a. m. a 7:00 p. m</dd>
