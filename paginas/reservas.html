@@ -25,12 +25,12 @@
                     <legend>Tus datos</legend>
                     <div>
                         <label for="nombre">Nombre completo</label>
-                        <input type="text" id="nombre" name="nombre" required>
+                        <input type="text" id="nombre" name="nombre" minlength="3" required>
                     </div>
 
                     <div>
                         <label for="documento">Numero de documento</label>
-                        <input type="number" id="documento" name="documento" required>
+                        <input type="tel" id="documento" name="documento" pattern="[0-9]{6,10}" title="Entre 6 y 10 digitos" required>
                     </div>
 
                     <div>
@@ -40,7 +40,7 @@
 
                     <div>
                         <label for="numero">Numero de celular</label>
-                        <input type="tel" id="numero" name="numero" required>
+                        <input type="tel" id="numero" name="numero" min="10" max="10" pattern="3[0-9]{9}" title="El numero debe empezar con 3 y tener 10 digitos exactos" required>
                     </div>
                 </fieldset>
 
@@ -48,7 +48,7 @@
                 <legend>Tu alquiler</legend>
                     <div>
                         <label for="fecha">Fecha del alquiler</label>
-                        <input type="date" id="fecha" name="fecha" required>
+                        <input type="date" id="fecha" name="fecha" min="2026-11-01" max="2026-12-31" required>
                     </div>
 
                     <div>
@@ -77,6 +77,7 @@
                             <option value="3">3</option>
                             <option value="4">4</option>
                             <option value="5">5</option>
+                            <option value="6">6</option>
                         </select>
                     </div>
 
@@ -95,7 +96,7 @@
                     <legend>Confirmacion</legend>
                     <div>
                         <label for="comentarios">Dejanos un comentario, puede ser una duda, sugerencia o cosas a tener en cuenta</label><br>
-                        <textarea name="comentarios" id="comentarios"></textarea>
+                        <textarea name="comentarios" id="comentarios" maxlength="300" title="Debe contener menos de 300 caracteres"></textarea>
                     </div>
 
                     <div>

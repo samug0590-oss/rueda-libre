@@ -97,3 +97,48 @@ reservas.html:
 │     (Créditos, copyright, enlaces legales, contacto)   │
 └────────────────────────────────────────────────────────┘
 
+En "Nombre completo" se uso "text" ya que el cliente no especifico si se podian usar o no caracteres especiales
+En "Numero de celular" se uso "tel" porque es el que nos permite digitar un numero de telefono con mas especificaciones (ejemplo: tiene que empezar por 3)
+En "Cantidad de bicicletas" se uso "select" + "option" ya que es la forma mas sencilla y facil de usar, ademas se necesitan menos especificaciones y restricciones
+
+Pruebas:
+
+Campo: Nombre
+Dato de prueba: Uso de caracteres especiales
+Resultado esperado: No da error al enviar
+Resultado obtenido: Se envio correctamente
+
+Campo: Documento
+Dato de prueba: Escribir mas de 10 digitos
+Resultado esperado: Da error al enviar
+Resultado obtenido: No se envio y salio el mensaje de error
+
+Campo: Telefono
+Dato de prueba: Escribir un numero que no empieze por 3
+Resultado esperado: Da error al enviar
+Resultado obtenido: No se envio y salio el mensaje de error
+
+Campo: Correo
+Dato de prueba: No usar el "@"
+Resultado esperado: No se envie y de error
+Resultado obtendio: No se envio y salio el mensaje de error
+
+Campo: Fecha
+Dato de prueba: Colocar una fecha fuera del limite establecido
+Resultado esperado: No deja elegir la fecha fuera del limite
+Resultado obtendio: No dejo elejir la fecha fuera del limite
+
+Campo: Tipo de bicicletas
+Dato de prueba: Elegir una bicicleta que no este en la lista
+Resultado esperado: No se puede ya que es select
+Resultado obtendio: No dejo elegir otra que no fuera una de las 3 opciones
+
+Campo: Plan
+Dato de prueba: Elegir un plan que no este entre las opciones
+Resultado esperado: No se puede elegir uno que no este enla lista
+Resultado obtenido: No se pudo elegir otra opcion que no estuviera en la lista
+
+Campo: Cantidad de bicicletas
+Dato de prueba: Elegir mas de 6 bicicletas
+Resultado esperado: No se puede elegir mas de 6 bicicletas ya que no esta entre las opciones
+Resultado obtenido: No se pudo elegir mas de 6 bicicletas
