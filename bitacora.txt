@@ -156,3 +156,5 @@ Tetxo blanco sobre azul noche: Apto para texto normal
 
 Heredada: Se hereda la propiedad: font-weight
 No heredada: No se hereda la propiedad: padding
+
+Causa del problema: El selector #menu usa utiliza el identificar #, lo que le da mucha mas prioridad que .activo que es un selector
