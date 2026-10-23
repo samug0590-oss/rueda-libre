@@ -153,3 +153,6 @@ Texto gris azfalto sobre crema: Apto solo para texto grande
 Texto verde ruta sobre crema: Apto para texto normal
 Texto naraja pedal sobre crema: No apto para texto
 Tetxo blanco sobre azul noche: Apto para texto normal
+
+Heredada: Se hereda la propiedad: font-weight
+No heredada: No se hereda la propiedad: padding

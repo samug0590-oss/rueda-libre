@@ -1,15 +1,61 @@
-body {background-color:#FAF6EF;}
-p {color: #5B6470;}
+@import url('https://googleapis.com');
 
-a {color: #1E7A4F;}
-button {color: #1E7A4F;}
+:root {
+    /* Paleta de colores corporativa */
+    --color-verde-ruta: #1E7A4F;
+    --color-naranja-pedal: #F39A2B;
+    --color-azul-noche: #14213D;
+    --color-crema: #FAF6EF;
+    --color-gris-asfalto: #5B6470;
 
-header {color: #14213D;}
-h1 {color: #14213D;}
-h2 {color: #14213D;}
-h3 {color: #14213D;}
-h4 {color: #14213D;}
+    --color-bg-primary: var(--color-crema);
+    --color-text-main: var(--color-azul-noche);      
+    --color-text-muted: var(--color-gris-asfalto);    
+    --color-link: var(--color-verde-ruta);            
 
-input[type="checkbox"] {accent-color: #F39A2B;}
+    --font-headings: 'Montserrat', Arial, sans-serif;
+    --font-body: 'Open Sans', Helvetica, sans-serif;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+}
 
-strong {color: #F39A2B}
+body {
+    font-family: var(--font-body);
+    font-weight: 400;
+    color: var(--color-text-main);
+    background-color: var(--color-bg-primary);
+    padding: var(--spacing-lg);
+    margin: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-headings);
+    font-weight: 700;
+    color: var(--color-text-main);
+    margin-bottom: var(--spacing-md);
+}
+
+strong {
+    font-weight: 600;
+    color: var(--color-verde-ruta);
+}
+
+a {
+    color: var(--color-link);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: var(--color-naranja-pedal);
+    background-color: var(--color-azul-noche);
+    text-decoration: none;
+}
+
+article {
+    margin-bottom: var(--spacing-lg);
+    border-bottom: 1px solid var(--color-gris-asfalto);
+    padding-bottom: var(--spacing-md);
+}
