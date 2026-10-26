@@ -162,3 +162,16 @@ Causa del problema: El selector #menu usa utiliza el identificar #, lo que le da
 Antes de cambiar box-sizing: El ancho total calculado en el navegador es de 334px, el elemento se ensancha mas de lo definido
 
 Despues de cambiar box-sizing: El ancho total calculado en el navegador es de exactamente 300px, el espacio de contenido se reduce automaticamente a 266px para absorver internamente los paddings y bordes sin alterar el tamaño final de la caja
+
+Rueda libre v1.0
+
+1* Resumen de lo construido por mini reto:
+-Conectividad(Tipografias): Conexion remota de fuentes tipograficas y optimizacion de llamadas de red
+-Variables y herencias: Centralizacion de fichas de color corporativo mediante CSS y aprovechamiento de herencias nativa para limpieza Html
+-Especificidad y accesibilidad: Resolucion de conflictos criticos de cascada y personalizacion completa de anillos de foco para navegacion mediante teclado
+-Box model: Implementacion del reset universal border-box, estilizacion de formularios responsivos y estructuracion de tablas corporativas legibles
+-Posicionamiento: Anclaje absoluto de componentes promociones internos e integracion de accesos globales fijos para flujos de venta por whatsapp
+
+2* Areas para mejorar en el futuro:
+-Migrar las rejillas lineales a sistemas avanzados de distribucion bidimensional como CSS Grid o Flexbox para layouts complejos en las secciones de servicios
+-Implementar variables dinamicas para alternancia entre temas claros y oscuros 
