@@ -66,15 +66,22 @@ strong {
 }
 
 header {
-    min-height: 25vh;
+    min-height: auto;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
     background-color: var(--color-azul-noche);
     color: var(--color-crema);
     padding: var(--spacing-lg);
     border-radius: 8px;
     margin-bottom: var(--spacing-lg);
+}
+
+.marca-contenedor h1 {
+    margin: 0 0 var(--spacing-sm) 0;
 }
 
 header h1, header h2, header h3, header p { 
@@ -86,22 +93,23 @@ header a {
 }
 
 #menu {
-    display: block;
-    margin-bottom: var(--spacing-md);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    margin: 0;
 }
 
 #menu a {
-    color: var(--color-gris-asfalto);
+    color: var(--color-crema);
     text-decoration: none;
     padding: var(--spacing-sm) var(--spacing-md);
-    display: inline-block;
+    border-radius: 4px;
     transition: all 0.2s ease;
 }
 
 #menu a.activo {
-    color: var(--color-verde-ruta);
-    font-weight: 600;
-    border-bottom: 2px solid var(--color-verde-ruta);
+    color: var(--color-naranja-pedal);
+    border-bottom: 2px solid var(--color-naranja-pedal);
 }
 
 #menu a:hover {
@@ -233,9 +241,29 @@ button[type="submit"] {
 
 button[type="submit"]:focus { outline: 3px solid var(--color-naranja-pedal); }
 
+.pie-contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: var(--spacing-lg);
+}
+
+.pie-bloque {
+    flex: 1;
+    min-width: 200px;
+}
+
+.pie-bloque p {
+    margin: var(--spacing-sm) 0 0 0;
+    color: var(--color-text-muted);
+}
+
 footer {
     margin-top: var(--spacing-lg);
-    padding-top: var(--spacing-md);
+    padding-top: var(--spacing-lg);
     border-top: 1px solid var(--color-gris-asfalto);
     margin-bottom: 5rem;
 }
+
