@@ -158,3 +158,7 @@ Heredada: Se hereda la propiedad: font-weight
 No heredada: No se hereda la propiedad: padding
 
 Causa del problema: El selector #menu usa utiliza el identificar #, lo que le da mucha mas prioridad que .activo que es un selector
+
+Antes de cambiar box-sizing: El ancho total calculado en el navegador es de 334px, el elemento se ensancha mas de lo definido
+
+Despues de cambiar box-sizing: El ancho total calculado en el navegador es de exactamente 300px, el espacio de contenido se reduce automaticamente a 266px para absorver internamente los paddings y bordes sin alterar el tamaño final de la caja
