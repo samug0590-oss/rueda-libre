@@ -39,12 +39,14 @@ a {
     font-weight: 600;
     text-decoration: underline;
     transition: color 0.2s ease, background-color 0.2s ease;
+    padding: var(--spacing-sm) var(--spacing-sm);
 }
 
 a:hover {
     color: var(--color-naranja-pedal);
     background-color: var(--color-azul-noche);
     text-decoration: none;
+    padding: var(--spacing-sm) var(--spacing-sm);
 }
 
 main {
@@ -111,8 +113,8 @@ header a {
 }
 
 #menu a:hover {
-    color: var(--color-azul-noche);
-    background-color: rgba(30, 122, 79, 0.1);
+    color: var(--color-naranja-pedal);
+    background-color: var(--color-azul-noche);
 }
 
 #menu a:focus {
