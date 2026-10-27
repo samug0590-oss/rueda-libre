@@ -175,3 +175,7 @@ Rueda libre v1.0
 2* Areas para mejorar en el futuro:
 -Migrar las rejillas lineales a sistemas avanzados de distribucion bidimensional como CSS Grid o Flexbox para layouts complejos en las secciones de servicios
 -Implementar variables dinamicas para alternancia entre temas claros y oscuros 
+
+1280px: 4 Columnas
+900px: 2 Columnas
+500px: 1 Columna

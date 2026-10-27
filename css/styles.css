@@ -48,8 +48,6 @@ a:hover {
 }
 
 main {
-    max-width: 50rem;
-    margin: 0 auto;
     padding: var(--spacing-md);
 }
 
@@ -84,7 +82,7 @@ header {
     margin: 0 0 var(--spacing-sm) 0;
 }
 
-header h1, header h2, header h3, header p { 
+header h1, header h2, header h3, header p {
     color: var(--color-crema); 
 }
 
@@ -131,6 +129,54 @@ header a {
     margin-bottom: var(--spacing-lg);
 }
 
+.nuestra-flota {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+.flota-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.flota-grid {grid-template-columns: repeat(4, 1fr);}
+@media (max-width: 900px) {.flota-grid {grid-template-columns: repeat(2, 1fr);}}
+@media (max-width: 600px) {.flota-grid {grid-template-columns: 1fr;}}
+
+.nuestra-flota h2 {
+    margin-bottom: 1.5rem;
+}
+
+.bici {
+    display: flex;
+    flex-direction: column;
+}
+
+.bici img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover0;
+}
+
+.bici h3,
+.bici p {
+    padding-inline: 1rem;
+}
+
+.bici p {
+    flex-grow: 1;
+}
+
+#bici__reservar {
+    margin: 1rem;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
 .etiqueta-nuevo {
     position: absolute;
     top: var(--spacing-sm);
@@ -147,7 +193,7 @@ header a {
 
 article img {
     display: block;
-    width: 100%;
+    width: auto;
     max-width: 100%;
     height: auto;
     border-radius: 4px;
@@ -199,6 +245,7 @@ table {
     margin-bottom: var(--spacing-lg);
     background-color: #ffffff;
 }
+
 table, th, td { border: 1px solid var(--color-gris-asfalto); }
 th, td { padding: var(--spacing-sm) var(--spacing-md); text-align: left; }
 thead th { background-color: var(--color-azul-noche); color: var(--color-crema); }
@@ -266,4 +313,3 @@ footer {
     border-top: 1px solid var(--color-gris-asfalto);
     margin-bottom: 5rem;
 }
-
