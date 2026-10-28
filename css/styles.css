@@ -82,8 +82,12 @@ body > header {
     margin-bottom: var(--spacing-lg);
 }
 
-.marca-contenedor h1 {
+#marca-contenedor h1 {
     margin: 0 0 var(--spacing-sm) 0;
+}
+
+#marca-contenedor img {
+    border-radius: 100px;
 }
 
 body > header h1,
@@ -205,8 +209,20 @@ article img {
     width: auto;
     max-width: 100%;
     height: auto;
+    max-height: 100%;
     border-radius: 4px;
     margin-top: var(--spacing-md);
+}
+
+.rutas {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem 2rem;
+    margin-bottom: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1500px;
+    margin-inline: auto;
 }
 
 .btn-whatsapp {
@@ -346,4 +362,29 @@ footer {
         grid-template-columns: 1fr;
         min-height: auto;
     }
+}
+
+.reservas-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    gap: var(--spacing-lg);
+    align-items: start;
+}
+
+@media (max-width: 768px) {
+    .reservas-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+.fila-campos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.fila-campos > div {
+    margin-bottom: 0;
 }

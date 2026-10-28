@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rueda libra | Reservas</title>
+    <title>Rueda libre | Reservas</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <header>
         <nav id="menu">
-            <a href="../index.html" class="btn.cta">Inicio</a>
-            <a href="./tarifas.html" class="btn.cta">Tarifas</a>
-            <a href="./reservas.html" class="btn.cta">Reservas</a>
+            <a href="../index.html" class="btn-cta">Inicio</a>
+            <a href="./tarifas.html" class="btn-cta">Tarifas</a>
+            <a href="./reservas.html" class="btn-cta">Reservas</a>
         </nav>
         <div id="marca-contenedor">
             <h1>Reserva tu bicicleta</h1>
-            <a href="reservas@ruedalibre.example">Correo de reservas</a>
+            <a href="mailto:reservas@ruedalibre.example">Correo de reservas</a>
         </div>
     </header>
 
-    <main>
-        <section>
+    <main class="reservas-layout">
+        <section class="reservas-form">
             <header>
-                <h1>Formulario de reserva</h1z>
+                <h1>Formulario de reserva</h1>
             </header>
             <form action="submit" method="post">
                 <fieldset>
@@ -32,19 +32,21 @@
                         <input type="text" id="nombre" name="nombre" minlength="3" required>
                     </div>
 
-                    <div>
-                        <label for="documento">Numero de documento</label>
-                        <input type="tel" id="documento" name="documento" pattern="[0-9]{6,10}" title="Entre 6 y 10 digitos" required>
+                    <div class="fila-campos">
+                        <div>
+                            <label for="documento">Numero de documento</label>
+                            <input type="tel" id="documento" name="documento" pattern="[0-9]{6,10}" title="Entre 6 y 10 digitos" required>
+                        </div>
+
+                        <div>
+                            <label for="numero">Numero de celular</label>
+                            <input type="tel" id="numero" name="numero" pattern="3[0-9]{9}" title="El numero debe empezar con 3 y tener 10 digitos exactos" required>
+                        </div>
                     </div>
 
                     <div>
                         <label for="correo">Correo electronico</label>
                         <input type="email" id="correo" name="correo" required>
-                    </div>
-
-                    <div>
-                        <label for="numero">Numero de celular</label>
-                        <input type="tel" id="numero" name="numero" min="10" max="10" pattern="3[0-9]{9}" title="El numero debe empezar con 3 y tener 10 digitos exactos" required>
                     </div>
                 </fieldset>
 
@@ -115,14 +117,17 @@
             </form>
         </section>
 
-        <section>
+        <aside class="reservas-info">
+            <h2>Contacto y horarios</h2>
+            <p><a href="mailto:reservas@ruedalibre.example">reservas@ruedalibre.example</a></p>
+            <p><a href="https://wa.me/573000000000">Escríbenos por WhatsApp</a></p>
             <dl>
-                <dt>Lunes a viernas</dt>
-                <dd>7:00 a. m. a 7:00 p. m</dd>
-                <dt>sábados, domingos y festivos</dt>
-                <dd>6:00 a. m. a 2:00 p. m.</dd>
+                <dt>Lunes a viernes</dt>
+                <dd>7:00 a. m. a 7:00 p. m.</dd>
+                <dt>Sábados, domingos y festivos</dt>
+                <dd>10:00 a. m. a 4:00 p. m.</dd>
             </dl>
-        </section>
+        </aside>
     </main>
 
     <footer>
@@ -134,7 +139,7 @@
             </div>
             <div class="pie-bloque">
                 <strong>Contacto</strong>
-                <p>mailto:hola@ruedalibre.example</p>
+                <p><a href="mailto:hola@ruedalibre.example" class="btn.cta">hola@ruedalibre.example</a></p>
             </div>
             <div class="pie-bloque">
                 <strong>Horarios</strong>

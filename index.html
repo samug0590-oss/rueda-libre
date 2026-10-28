@@ -10,9 +10,9 @@
 <body>
     <header>
         <nav id="menu">
-            <a href="index.html" class="btn.cta">Inicio</a>
-            <a href="paginas/tarifas.html" class="btn.cta">Tarifas</a>
-            <a href="paginas/reservas.html" class="btn.cta">Reservas</a>
+            <a href="index.html" class="btn-cta">Inicio</a>
+            <a href="paginas/tarifas.html" class="btn-cta">Tarifas</a>
+            <a href="paginas/reservas.html" class="btn-cta">Reservas</a>
         </nav>
         <div id="marca-contenedor">
             <h1>Rueda Libre</h1>
@@ -99,17 +99,33 @@
 
         <section>
             <header>
-                <h1>Nuestros servicios</h1>
+                <h1>Nuestras rutas</h1>
             </header>
 
-            <article>
-                <h3>Experiencias y Tours Guiados</h3>
-                <h4>Grafiti & Comuna 13 en Bici Eléctrica</h4>
-                <p>Recorridos guiados con guías locales <em>privados</em> que combinan tramos en e-bike y caminatas para conocer la historia, transformación y arte urbano de la ciudad.</p>
-                <a href="./paginas/tarifas.html#2">Descubre las tarifas de las Experiencias</a>
-                <br><br>
-                <img src="./imagenes/image_content_35147080_20200210211335.webp" alt="Imagen de ruta Medellin" width="300">
-            </article>
+            <div class="rutas">
+                <article>
+                    <h3>Rio y Parques</h3>
+                    <p>Nivel: Facil</p>
+                    <a href="./paginas/tarifas.html#2" class="btn.cta" id="bici__reservar">Descubre las tarifas de las Experiencias</a>
+                    <img src="./imagenes/rios.avif" alt="Imagen de ruta Rio y Parques">
+                </article>
+
+                <article> 
+                    <h3>Sabores de Barrio</h3>
+                    <p>Nivel: Medio</p>
+                    <a href="./paginas/tarifas.html#2" class="btn.cta" id="bici__reservar">Descubre las tarifas de las Experiencias</a>
+                    <br>
+                    <img src="./imagenes/barrio.avif" alt="Imagen de ruta Sabores de barrio">
+                </article>
+
+                <article>
+                    <h3>Retro las Palmas</h3>
+                    <p>Nivel: Dificil</p>
+                    <a href="./paginas/tarifas.html#2" class="btn.cta" id="bici__reservar">Descubre las tarifas de las Experiencias</a>
+                    <br>
+                    <img src="./imagenes/palmas.jpg" alt="Imagen de ruta Retro las palmas">
+                </article>
+            </div>
         </section>
 
         <section>
@@ -143,7 +159,7 @@
             </div>
             <div class="pie-bloque">
                 <strong>Contacto</strong>
-                <p>mailto:hola@ruedalibre.example</p>
+                <p><a href="mailto:hola@ruedalibre.example" class="btn.cta">hola@ruedalibre.example</a></p>
             </div>
             <div class="pie-bloque">
                 <strong>Horarios</strong>
