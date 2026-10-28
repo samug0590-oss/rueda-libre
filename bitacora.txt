@@ -186,3 +186,12 @@ Reservas: Use grid para poder divir el espacio en 3 partes 2/3 de formulario y 1
 Fila del formulario: Use flex para tener ambos campos en la misma linea
 Header: Use flex para tener todo en la misma linea y poder dividirlo mejor en el menu
 Footer: Use flex por simplicidad y que no necesitaba especificar las columnas
+
+360px: Las tablas de tarifas no se ven a menos que se desplaze lateralmente:
+Solucion: Distribuir mejor las etiquetas y usar @media para los diferentes tamaños
+
+"Nuestras rutas" tampoco se ve a menos que se desplaze lateralmente:
+Solucion: Use grid para que se organizara automaticamente dependiendo del tamaño
+
+768px: Todo se ve correcto
+1280px: Todo se ve correcto
