@@ -195,3 +195,5 @@ Solucion: Use grid para que se organizara automaticamente dependiendo del tamañ
 
 768px: Todo se ve correcto
 1280px: Todo se ve correcto
+
+Use la ia para: optimizar el codigo y reescribirlo para que tenga una estructura correcta y borrar cosas que ya no se necesitaban, tambienal inicio para hacer grid y flex, pero ya se como hacerlo por mi mismo, mayormente se uso la ia en el resto del codigo solo cuando tenia dudas pequeñas de una cierta etiqueta, propiedad, o linea de codigo que faltaba para que todo funcionara
