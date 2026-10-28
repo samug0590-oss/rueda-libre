@@ -1,4 +1,4 @@
-@import url('https://googleapis.com');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap');
 
 :root {
     --color-verde-ruta: #1E7A4F;
@@ -7,6 +7,7 @@
     --color-crema: #FAF6EF;
     --color-gris-asfalto: #5B6470;
 
+    --color-bg-card: var(--color-naranja-pedal);
     --color-bg-primary: var(--color-crema);
     --color-text-main: var(--color-azul-noche);
     --color-text-muted: var(--color-gris-asfalto);
@@ -65,7 +66,8 @@ strong {
     color: var(--color-verde-ruta);
 }
 
-header {
+section > header,
+body > header {
     min-height: auto;
     display: flex;
     flex-direction: row;
@@ -84,11 +86,19 @@ header {
     margin: 0 0 var(--spacing-sm) 0;
 }
 
-header h1, header h2, header h3, header p {
+body > header h1,
+body > header h2,
+body > header h3,
+body > header p,
+section > header h1,
+section > header h2,
+section > header h3,
+section > header p {
     color: var(--color-crema); 
 }
 
-header a {
+section > header a 
+body > header a {
     color: var(--color-naranja-pedal);
 }
 
@@ -139,13 +149,9 @@ header a {
 
 .flota-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 1.5rem;
 }
-
-.flota-grid {grid-template-columns: repeat(4, 1fr);}
-@media (max-width: 900px) {.flota-grid {grid-template-columns: repeat(2, 1fr);}}
-@media (max-width: 600px) {.flota-grid {grid-template-columns: 1fr;}}
 
 .nuestra-flota h2 {
     margin-bottom: 1.5rem;
@@ -159,10 +165,11 @@ header a {
 .bici img {
     width: 100%;
     aspect-ratio: 4 / 3;
-    object-fit: cover0;
+    object-fit: cover;
 }
 
 .bici h3,
+.bici h4,
 .bici p {
     padding-inline: 1rem;
 }
@@ -314,4 +321,29 @@ footer {
     padding-top: var(--spacing-lg);
     border-top: 1px solid var(--color-gris-asfalto);
     margin-bottom: 5rem;
+}
+
+.portada {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+    min-height: 80vh;
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+.portada__imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .portada {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
 }
