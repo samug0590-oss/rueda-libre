@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Una pagina para alquilar bicicletas en todo medellin :v">
     <title>Rueda Libre | Alquiler de bicicletas en Medellín</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -38,113 +40,239 @@
                 <h2>Nuestra flota</h2>
             </header>
 
-            <div class="flota-grid">
-                <fieldset>
-                    <article class="bici">
-                        <img src="./imagenes/images.jpeg" alt="Bicicleta urbana">
-                        <h3>Urbana clasica</h3>
-                        <p>Cómoda y liviana para las ciclorrutas.</p><br>
-                        <h4>Precio por hora: $10.000</h4>
-                        <a href="paginas/reservas.html" class="btn-cta" id="bici__reservar">Reservar</a>
-                    </article>
-                </fieldset>
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <div class="p-3 border rounded bg-body-tertiary">
+                            <fieldset>
+                                <article class="bici">
+                                    <img src="../imagenes/urbana.jpeg" alt="Bicicleta urbana" class="img-fluid">
+                                    <h3>Urbana clasica</h3>
+                                    <p>Cómoda y liviana para las ciclorrutas.</p><br>
+                                    <h4>Precio por hora: $10.000</h4>
+                                    <a href="paginas/reservas.html" class="btn-cta" >Reservar</a>
+                                </article>
+                            </fieldset>
+                        </div>
+                    </div>
 
-                <fieldset>
-                    <article class="bici">
-                        <img src="./imagenes/plegable.jpg" alt="Bicicleta urbana plegable">
-                        <h3>Urbana Plegable</h3>
-                        <p>Se dobla en segundos; ideal para combinar con el metro.</p>
-                        <h4>Precio por hora: $12.000</h4>
-                        <a href="paginas/reservas.html" class="btn-cta" id="bici__reservar">Reservar</a>
-                    </article>
-                </fieldset>
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <div class="p-3 border rounded bg-body-tertiary">
+                            <fieldset>
+                                <article class="bici">
+                                    <img src="../imagenes/plegable.jpg" alt="Bicicleta urbana plegable" class="img-fluid">
+                                    <h3>Urbana Plegable</h3>
+                                    <p>Se dobla en segundos; ideal para combinar con el metro.</p>
+                                    <h4>Precio por hora: $12.000</h4>
+                                    <a href="paginas/reservas.html" class="btn-cta" >Reservar</a>
+                                </article>
+                            </fieldset>
+                        </div>
+                    </div>
 
-                <fieldset>
-                    <article class="bici">
-                        <img src="./imagenes/trail.jpeg" alt="Bicicleta de montaña trail">
-                        <h3>Montaña Trail</h3>
-                        <p>Suspensión delantera y 21 cambios para las subidas.</p><br>
-                        <h4>Precio por hora: $15.000</h4>
-                        <a href="paginas/reservas.html" class="btn-cta" id="bici__reservar">Reservar</a>
-                    </article>
-                </fieldset>
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <div class="p-3 border rounded bg-body-tertiary">
+                            <fieldset>
+                                <article class="bici">
+                                    <img src="../imagenes/trail.jpeg" alt="Bicicleta de montaña trail" class="img-fluid">
+                                    <h3>Montaña Trail</h3>
+                                    <p>Suspensión delantera y 21 cambios para las subidas.</p><br>  
+                                    <h4>Precio por hora: $15.000</h4>
+                                    <a href="paginas/reservas.html" class="btn-cta" >Reservar</a>
+                                </article>
+                            </fieldset>
+                        </div>
+                    </div>
 
-                <fieldset>
-                    <article class="bici">
-                        <img src="./imagenes/gravel.jpeg" alt="Bicicleta gravel aventurera">
-                        <h3>Gravel Aventura</h3>
-                        <p>Para rutas mixtas de asfalto y destapado.</p><br>
-                        <h4>Precio por hora: $18.000</h4>
-                        <a href="paginas/reservas.html" class="btn-cta" id="bici__reservar">Reservar</a>
-                    </article>
-                </fieldset>
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <div class="p-3 border rounded bg-body-tertiary">
+                            <fieldset>
+                                <article class="bici">
+                                    <img src="../imagenes/gravel.jpeg" alt="Bicicleta gravel aventurera" class="img-fluid">
+                                    <h3>Gravel Aventura</h3>
+                                    <p>Para rutas mixtas de asfalto y destapado.</p><br>
+                                    <h4>Precio por hora: $18.000</h4>
+                                    <a href="paginas/reservas.html" class="btn-cta" >Reservar</a>
+                                </article>
+                            </fieldset>
+                        </div>
+                    </div>
 
-                <fieldset>
-                    <article class="bici">
-                        <img src="./imagenes/electrica.jpeg" alt="Bicicleta electrica urbana">
-                        <h3>Eléctrica Urbana</h3>
-                        <p>Asistencia eléctrica con 45 km de autonomía.</p>
-                        <h4>Precio por hora: $25.000</h4>
-                        <a href="paginas/reservas.html" class="btn-cta" id="bici__reservar">Reservar</a>
-                    </article>
-                </fieldset>
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <div class="p-3 border rounded bg-body-tertiary">
+                            <fieldset>
+                                <article class="bici">
+                                    <img src="../imagenes/electrica.jpeg" alt="Bicicleta electrica urbana" class="img-fluid">
+                                    <h3>Eléctrica Urbana</h3>
+                                    <p>Asistencia eléctrica con 45 km de autonomía.</p>
+                                    <h4>Precio por hora: $25.000</h4>
+                                    <a href="paginas/reservas.html" class="btn-cta" >Reservar</a>
+                                </article>
+                            </fieldset>
+                        </div>
+                    </div>
 
-                <fieldset>
-                    <article class="bici">
-                        <img src="./imagenes/infantil.jpeg" alt="Bicicleta pequeña infantil">
-                        <h3>Infantil</h3>
-                        <p>Para niños de 6 a 10 años.</p><br>
-                        <h4>Precio por hora: $8.000</h4>
-                        <a href="paginas/reservas.html" class="btn-cta" id="bici__reservar">Reservar</a>
-                    </article>
-                </fieldset>
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <div class="p-3 border rounded bg-body-tertiary">
+                            <fieldset>
+                                <article class="bici">
+                                    <img src="../imagenes/infantil.jpeg" alt="Bicicleta pequeña infantil" class="img-fluid">
+                                    <h3>Infantil</h3>
+                                    <p>Para niños de 6 a 10 años.</p><br>
+                                    <h4>Precio por hora: $8.000</h4>
+                                    <a href="paginas/reservas.html" class="btn-cta" >Reservar</a>
+                                </article>
+                            </fieldset>
+                        </div>
+                    </div>
 
-                <fieldset>
-                    <article class="bici">
-                        <img src="./imagenes/tandem.jpeg" alt="Bicicleta tandem para 2 personas">
-                        <h3>Tandem</h3>
-                        <p>Perfecta para pasear en pareja</p>
-                        <h4>Precio por hora: $20.000</h4>
-                        <a href="./paginas/reservas.html" class="btn-cta" id="bici__reservar">Reservar</a>
-                    </article>
-                </fieldset>
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <div class="p-3 border rounded bg-body-tertiary">
+                            <fieldset>
+                                <article class="bici">
+                                    <img src="../imagenes/tandem.jpeg" alt="Bicicleta tandem para 2 personas" class="img-fluid">
+                                    <h3>Tandem</h3>
+                                    <p>Perfecta para pasear en pareja</p>
+                                    <h4>Precio por hora: $20.000</h4>
+                                    <a href="./paginas/reservas.html" class="btn-cta" >Reservar</a>
+                                </article>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="nuestras-rutas">
             <header>
-                <h1>Nuestras rutas</h1>
+                <h2>Nuestras rutas</h2>
             </header>
 
-            <div class="rutas-grid">
-                <fieldset>
-                    <article class="ruta">
-                        <h3>Rio y Parques</h3>
-                        <p>Nivel: Facil</p>
-                        <a href="./paginas/tarifas.html#2" class="btn-cta" id="bici__reservar">Descubre las tarifas de las Experiencias</a>
-                        <img src="./imagenes/rios.avif" alt="Imagen de ruta Rio y Parques">
-                    </article>
-                </fieldset>
-                
-                <fieldset>
-                    <article class="ruta"> 
-                        <h3>Sabores de Barrio</h3>
-                        <p>Nivel: Medio</p>
-                        <a href="./paginas/tarifas.html#2" class="btn-cta" id="bici__reservar">Descubre las tarifas de las Experiencias</a>
-                        <br>
-                        <img src="./imagenes/barrio.avif" alt="Imagen de ruta Sabores de barrio">
-                    </article>
-                </fieldset>
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-12 col-md-4">
+                        <div class="p-3 border rounded bg-body-tertiary">
+                            <fieldset>
+                                <article class="ruta">
+                                    <h3>Rio y Parques</h3>
+                                    <p>Nivel: Facil</p>
+                                    <a href="./paginas/tarifas.html#2" class="btn-cta" >Descubre las tarifas de las Experiencias</a>
+                                    <img src="./imagenes/rios.avif" alt="Imagen de ruta Rio y Parques">
+                                </article>
+                            </fieldset>
+                        </div>
+                    </div>
 
-                <fieldset>
-                    <article class="ruta">
-                        <h3>Retro las Palmas</h3>
-                        <p>Nivel: Dificil</p>
-                        <a href="./paginas/tarifas.html#2" class="btn-cta" id="bici__reservar">Descubre las tarifas de las Experiencias</a>
-                        <br>
-                        <img src="./imagenes/palmas.jpg" alt="Imagen de ruta Retro las palmas">
-                    </article>
-                </fieldset>
+                    <div class="col-12 col-md-4">
+                        <div class="p-3 border rounded bg-body-tertiary">
+                            <fieldset>
+                                <article class="ruta"> 
+                                    <h3>Sabores de Barrio</h3>
+                                    <p>Nivel: Medio</p>
+                                    <a href="./paginas/tarifas.html#2" class="btn-cta" >Descubre las tarifas de las Experiencias</a>
+                                    <br>
+                                    <img src="./imagenes/barrio.avif" alt="Imagen de ruta Sabores de barrio">
+                                </article>
+                            </fieldset>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-md-4">
+                        <div class="p-3 border rounded bg-body-tertiary">
+                            <fieldset>
+                                <article class="ruta">
+                                    <h3>Retro las Palmas</h3>
+                                    <p>Nivel: Dificil</p>
+                                    <a href="./paginas/tarifas.html#2" class="btn-cta" >Descubre las tarifas de las Experiencias</a>
+                                    <br>
+                                    <img src="./imagenes/palmas.jpg" alt="Imagen de ruta Retro las palmas">
+                                </article>
+                            </fieldset>
+                        </div>
+                    </div>  
+                </div> 
+            </div>
+        </section>
+
+        <section>
+            <header>
+                <h2>¿Por que Rueda Libre?</h2>
+            </header>
+            <div class="container text-center">
+                <div class="row g-4">
+                    <div class="col-12 col-sm-6 col-lg-3 p-3 h4">
+                        <div class="p-3 border rounded bg-body-tertiary">
+                            <fieldset>
+                                <article>
+                                    <h3>Bicicletas revisadas en cada alquiler</h3>
+                                    <p>Todas nuestras bicicletas estan en el mejor estado posible, siempre se revisan semanalmente y antes de tu alquiler</p>
+                                    <p>Dato destacado: Nunca ha habido 1 solo caso de una bicicleta defectuosa</p>
+                                </article>
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3 p-3 h4">
+                        <div class="p-3 border rounded bg-body-tertiary">
+                            <fieldset>
+                                <article>
+                                    <h3>Casco y candados incluidos</h3>
+                                    <p>Todos nuestros servicios incluyen casco y candado, ¿que mas podrias pedir?</p>
+                                    <p>Dato destacado: Ambos casco y candado son de alta gama para la mejor experiencia</p>
+                                </article>
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <div class=" col-12 col-sm-6 col-lg-3 p-3 h4">
+                        <div class="p-3 border rounded bg-body-tertiary">
+                            <fieldset>
+                                <article>
+                                    <h3>Guias certificados</h3>
+                                    <p>Todos nuestros guias de ruta estan certificados para la mejor experiencia y seguridad</p>
+                                    <p>Dato destacado: La peor calificacion jamas recibida de un guia es de 4.2 Estrellas</p>
+                                </article>
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3 p-3 h4">
+                        <div class="p-3 border rounded bg-body-tertiary">
+                            <fieldset>
+                                <article>
+                                    <h3>Puntos de devolucion en 3 sedes</h3>
+                                    <p>Si en cualquier momento te aburres o prefieres para puedes hacer una devolucion en caulquier de nuetras 3 sedes</p>
+                                    <p>Dato destacado: Nuestro ratio de devolucion es 1 entre 100 clientes</p>
+                                </article>
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column flex-md-row gap-2 justify-content-center p-3 h3">
+                        <div class="portada__imagen">
+                            <header>
+                                <h3 class="mb-0 text-center">¿Listo para rodar?</h3>
+                                <a href="../paginas/reservas.html" class="btn-cta" >destacado</a>
+                            </header>
+                        </div>
+                    </div>
+
+                    <header>
+                        <div class="portada__imagen">
+                            <div class="d-flex flex-column flex-md-row gap-2 justify-content-center p-3 h3">
+                                <h3 class="mb-0 text-center">¿Listo para rodar?</h3>
+                                <a href="../paginas/reservas.html" class="btn-cta" >destacado</a>
+                            </div>
+                        </div>
+                    </header>
+                    
+
+                    <div class="col-12 d-none d-md-block img-fluid mx-md-auto">
+                        <div class="portada__imagen">
+                            <img src="../imagenes/logo.webp" alt="Imagen del logo de Rueda-Libre">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -190,5 +318,6 @@
     </footer>
 
     <a href="https://wa.me/573000000000" class="btn-whatsapp" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
 </body>
 </html>

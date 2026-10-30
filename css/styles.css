@@ -20,11 +20,7 @@
     --spacing-md: 1rem;
     --spacing-lg: 2rem;
 }
-
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
+    
 body {
     font-family: var(--font-body);
     font-weight: 400;
@@ -33,13 +29,6 @@ body {
     padding: var(--spacing-md);
     margin: 0;
     line-height: 1.6;
-}
-
-
-img {
-    display: block;      
-    max-width: 100%;     
-    height: auto;        
 }
 
 main {
@@ -80,14 +69,14 @@ a:hover {
 }
 
 body > header,
-section > header {
+section > header,
+.portada__imagen {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: var(--spacing-md);
     background-color: var(--color-azul-noche);
-    color: var(--color-crema);
     padding: var(--spacing-md);
     border-radius: 8px;
     margin-bottom: var(--spacing-lg);
@@ -100,12 +89,15 @@ section > header p,
 body > header h1,
 body > header h2,
 body > header h3,
-body > header p {
+body > header p, 
+div > header h2,
+.portada__imagen h3 {
     color: var(--color-crema);
 }
 
 header img {
     border-radius: 100px;
+    align-self: center;
 }
 
 body > header a {
@@ -234,10 +226,9 @@ article img {
 }
 
 .portada__imagen img {
-    width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 1000px;
 }
 
 @media (min-width: 768px) {
@@ -248,11 +239,11 @@ article img {
     }
 
     .portada__imagen img {
-        height: 100%;
+        width: 100%;
     }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
     .portada {
         gap: 3rem;
     }
@@ -260,22 +251,10 @@ article img {
     .portada__texto h1 {
         font-size: 3rem;
     }
-}
 
-.nuestra-flota {
-    padding: 2rem 1rem;
-    max-width: 1200px;
-    margin-inline: auto;
-}
-
-.nuestra-flota h2 {
-    margin-bottom: 1.5rem;
-}
-
-.flota-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+    .portada__imagen img {
+        width: 100%;
+    }
 }
 
 .bici {
@@ -298,52 +277,6 @@ article img {
 
 .bici p {
     flex-grow: 1;
-}
-
-.bici__reservar {
-    margin: auto 1rem 1rem;
-    text-align: center;
-}
-
-@media (min-width: 768px) {
-    .flota-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-@media (min-width: 1280px) {
-    .flota-grid {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-}
-
-.nuestras-rutas {
-    padding: 2rem 1rem;
-    max-width: 1200px;
-    margin-inline: auto;
-}
-
-.rutas-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-}
-
-.ruta {
-    display: flex;
-    flex-direction: column;
-}
-
-@media (min-width: 768px) {
-    .rutas-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-@media (min-width: 1200px) {
-    .rutas-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
 }
 
 .reservas-layout {

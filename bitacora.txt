@@ -212,3 +212,41 @@ bg-color: Agrega un color al fondo
 p-#: Agrega padding a todos los lados
 h#: Cambia el tamaño de el texto como base de los h1, h2, h3, h4, h5, h6 convencionales
 img-fluid: Cambia el tamaño de la imagen automaticamente para que no se sobrelape con otros elementos
+
+Semana 2: Dia 2: MiniReto 7:
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+Codigo no utilizado/tachado
+Solucion: Borrarlo
+
+.portada__imagen img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 1000px;
+}
+Codigo no utilizado/tachado
+Solucion: Borrarlo
+
+body > header,
+section > header,
+.portada__imagen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--spacing-md);
+    background-color: var(--color-azul-noche);
+
+
+    --color: var(--color-crema);--
+
+
+    padding: var(--spacing-md);
+    border-radius: 8px;
+    margin-bottom: var(--spacing-lg);
+}
+El codigo de color: var no se utiliza/tachado
+Solucion: Borrarlo
