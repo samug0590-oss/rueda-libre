@@ -196,7 +196,7 @@ Solucion: Use grid para que se organizara automaticamente dependiendo del tamañ
 768px: Todo se ve correcto
 1280px: Todo se ve correcto
 
-Use la ia para: optimizar el codigo y reescribirlo para que tenga una estructura correcta y borrar cosas que ya no se necesitaban, tambienal inicio para hacer grid y flex, pero ya se como hacerlo por mi mismo, mayormente se uso la ia en el resto del codigo solo cuando tenia dudas pequeñas de una cierta etiqueta, propiedad, o linea de codigo que faltaba para que todo funcionara
+Use la ia para: optimizar el codigo y reescribirlo para que tenga una estructura correcta y borrar cosas que ya no se necesitaban, tambien al inicio para hacer grid y flex, pero ya se como hacerlo por mi mismo, mayormente se uso la ia en el resto del codigo solo cuando tenia dudas pequeñas de una cierta etiqueta, propiedad, o linea de codigo que faltaba para que todo funcionara
 
 Semana 2: Dia 2: MiniReto 5:
 Tiempo invertido: 50 minutos
@@ -205,3 +205,10 @@ Lineas de CSS propia: 44~
 Clases usadas bootstrap: 16 (Contando individualmente cada linea nueva, sin contar su cierre solo la etiqueta de apertura)
 
 Alineo la flota mucho mas facil y entendible, mas rapido y con menos codigo, solo que sin el css se pierde el orden, diseño y tamaño de imagenes, pero la galeria en general queda como deberia de ser depediendo de el tamaño de la pantalla
+
+Semana 2: Dia 2: MiniReto 6:
+text-center: Centra el texto en el container
+bg-color: Agrega un color al fondo
+p-#: Agrega padding a todos los lados
+h#: Cambia el tamaño de el texto como base de los h1, h2, h3, h4, h5, h6 convencionales
+img-fluid: Cambia el tamaño de la imagen automaticamente para que no se sobrelape con otros elementos
