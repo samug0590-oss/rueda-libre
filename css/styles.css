@@ -164,6 +164,10 @@ body > header a {
     }
 }
 
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
 .btn-cta {
     display: inline-block;
     background-color: var(--color-verde-ruta);
