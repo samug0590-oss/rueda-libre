@@ -23,127 +23,86 @@
     </header>
 
     <main>
-        <section>
+        <section class="mb-5">
             <div class="container text-center">
                 <div class="row">
                     <div class="col-12">
-                        <p>Tarifas de las <strong>bicicletas</strong></p>
+                        <h2 class="h4">Tarifas de las <strong>bicicletas</strong></h2>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-3 col-lg">
-                        Tipo de bicicleta
-                    </div>
-                    <div class="col-3 col-lg">
-                        1 hora
-                    </div>
-                    <div class="col-3 col-lg">
-                        Medio dia (4h)
-                    </div>
-                    <div class="col-3 col-lg">
-                        Dia completo
-                    </div>
-                    <div class="col-3 col-lg-2">
-                        Extras
-                    </div>
+                <!-- Encabezado (Se ocultará en móvil) -->
+                <div class="row border d-none d-sm-flex">
+                    <div class="col-3 col-lg border"><p class="m-2">Tipo de bicicleta</p></div>
+                    <div class="col-3 col-lg border"><p class="m-2">1 hora</p></div>
+                    <div class="col-3 col-lg border"><p class="m-2">Medio día (4h)</p></div>
+                    <div class="col-3 col-lg border"><p class="m-2">Día completo</p></div>
                 </div>
-            </div>
 
-                <div class="row g-3">
-                    <div class="col-6 col-lg-2">
-                        <h2>Tipo de bicicleta</h2>
-                    </div>
+                <div class="row border tabla-movil-tarjeta">
+                    <div class="col-3 col-lg border" data-label="Tipo de bicicleta"><p class="m-2">Urbana</p></div>
+                    <div class="col-3 col-lg border" data-label="1 hora"><p class="m-2">$10.000</p></div>
+                    <div class="col-3 col-lg border" data-label="Medio día (4h)"><p class="m-2">$30.000</p></div>
+                    <div class="col-3 col-lg border" data-label="Día completo"><p class="m-2">$50.000</p></div>
                 </div>
-                        <tr>
-                            <td>Urbana</td>
-                            <td>$10.000</td>
-                            <td>$30.000</td>
-                            <td>$50.000</td>
-                        </tr>
-                        <tr>
-                            <td>Montaña</td>
-                            <td>$15.000</td>
-                            <td>$45.000</td>
-                            <td>$70.000</td>
-                        </tr>
-                        <tr>
-                            <td>Electrica</td>
-                            <td>$25.000</td>
-                            <td>$70.000</td>
-                            <td>$110.000</td>
-                        </tr>
-                    </tbody>
 
-                    <thead>
-                        <tr>
-                            <th scope="col">Tipo de bicicleta</th>
-                            <th scope="col">1 hora</th>
-                            <th scope="col">Media dia (4h)</th>
-                            <th scope="col">Dia completo</th>
-                        </tr>
-                    </thead>
-                    <tbody> 
-                        <tr>
-                            <td>Urbana</td>
-                            <td>$10.000</td>
-                            <td>$30.000</td>
-                            <td>$50.000</td>
-                        </tr>
-                        <tr>
-                            <td>Montaña</td>
-                            <td>$15.000</td>
-                            <td>$45.000</td>
-                            <td>$70.000</td>
-                        </tr>
-                        <tr>
-                            <td>Electrica</td>
-                            <td>$25.000</td>
-                            <td>$70.000</td>
-                            <td>$110.000</td>
-                        </tr>
-                    </tbody>
-                
+                <div class="row border tabla-movil-tarjeta">
+                    <div class="col-3 col-lg border" data-label="Tipo de bicicleta"><p class="m-2">Montaña</p></div>
+                    <div class="col-3 col-lg border" data-label="1 hora"><p class="m-2">$15.000</p></div>
+                    <div class="col-3 col-lg border" data-label="Medio día (4h)"><p class="m-2">$45.000</p></div>
+                    <div class="col-3 col-lg border" data-label="Día completo"><p class="m-2">$70.000</p></div>
+                </div>
+
+                <div class="row border tabla-movil-tarjeta">
+                    <div class="col-3 col-lg border" data-label="Tipo de bicicleta"><p class="m-2">Eléctrica</p></div>
+                    <div class="col-3 col-lg border" data-label="1 hora"><p class="m-2">$25.000</p></div>
+                    <div class="col-3 col-lg border" data-label="Medio día (4h)"><p class="m-2">$70.000</p></div>
+                    <div class="col-3 col-lg border" data-label="Día completo"><p class="m-2">$110.000</p></div>
+                </div>
             </div>
         </section>
 
         <section>
-            <table border="1">
-                <caption>Tarifas de los <strong>recorridos</strong></caption>
-                <thead>
-                    <tr>
-                        <th scope="col">Recorrido</th>
-                        <th scope="col">Distancia</th>
-                        <th scope="col">Duracion</th>
-                        <th scope="col">Nivel</th>
-                        <th scope="col">Precio por persona</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Rio y parques</td>
-                        <td>12km</td>
-                        <td>2 horas</td>
-                        <td>Facil</td>
-                        <td>$45.000</td>
-                    </tr>
-                    <tr>
-                        <td>Sabores de Barrio</td>
-                        <td>12km</td>
-                        <td>3 horas</td>
-                        <td>Medio</td>
-                        <td>$60.000</td>
-                    </tr>
-                    <tr>
-                        <td>Retro Las Palmas</td>
-                        <td>25km</td>
-                        <td>4 horas</td>
-                        <td>Dificil</td>
-                        <td>$85.000</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="container text-center" id="tableB">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="h4">Tarifas de las <strong>rutas</strong></h2>
+                    </div>
+                </div>
+                <!-- Encabezado (Se ocultará en móvil) -->
+                <div class="row border d-none d-sm-flex">
+                    <div class="col col-lg border"><p class="m-2">Recorrido</p></div>
+                    <div class="col col-lg border"><p class="m-2">Distancia</p></div>
+                    <div class="col col-lg border"><p class="m-2">Duración</p></div>
+                    <div class="col col-lg border"><p class="m-2">Nivel</p></div>
+                    <div class="col col-lg border"><p class="m-2">Precio por persona</p></div>
+                </div>
+
+                <div class="row border tabla-movil-tarjeta">
+                    <div class="col col-lg border" data-label="Recorrido"><p class="m-2">Río y Parques</p></div>
+                    <div class="col col-lg border" data-label="Distancia"><p class="m-2">12Km</p></div>
+                    <div class="col col-lg border" data-label="Duración"><p class="m-2">2 Horas</p></div>
+                    <div class="col col-lg border" data-label="Nivel"><p class="m-2">Fácil</p></div>
+                    <div class="col col-lg border" data-label="Precio por persona"><p class="m-2">$45.000</p></div>
+                </div>
+
+                <div class="row border tabla-movil-tarjeta">
+                    <div class="col col-lg border" data-label="Recorrido"><p class="m-2">Sabores de Barrio</p></div>
+                    <div class="col col-lg border" data-label="Distancia"><p class="m-2">12Km</p></div>
+                    <div class="col col-lg border" data-label="Duración"><p class="m-2">3 Horas</p></div>
+                    <div class="col col-lg border" data-label="Nivel"><p class="m-2">Medio</p></div>
+                    <div class="col col-lg border" data-label="Precio por persona"><p class="m-2">$60.000</p></div>
+                </div>
+
+                <div class="row border tabla-movil-tarjeta">
+                    <div class="col col-lg border" data-label="Recorrido"><p class="m-2">Retro Las Palmas</p></div>
+                    <div class="col col-lg border" data-label="Distancia"><p class="m-2">25Km</p></div>
+                    <div class="col col-lg border" data-label="Duración"><p class="m-2">4 Horas</p></div>
+                    <div class="col col-lg border" data-label="Nivel"><p class="m-2">Difícil</p></div>
+                    <div class="col col-lg border" data-label="Precio por persona"><p class="m-2">$85.000</p></div>
+                </div>
+            </div>
         </section>
-        
+
         <a href="reservas.html">Haz tu reserva aqui!</a>
 
         <aside>

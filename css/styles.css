@@ -230,6 +230,7 @@ article img {
 }
 
 .portada__imagen img {
+    width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 1000px;
@@ -283,130 +284,42 @@ article img {
     flex-grow: 1;
 }
 
-.reservas-layout {
-    display: grid;
-    gap: var(--spacing-lg);
+.customs-input:focus {
+  outline: none !important;
+  border-color: var(--color-azul-noche) !important;
+  box-shadow: 0 0 0 3px var(--color-naranja-pedal) !important;
 }
 
-@media (min-width: 768px) {
-    .reservas-layout {
-        grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
-        align-items: start;
-    }
+.btn-custom {
+  background-color: var(--color-azul-noche);
+  color: var(--color-crema);
+  border: none;
 }
 
-@media (min-width: 1280px) {
-    .reservas-layout {
-        gap: 3rem;
-    }
-
-    .reservas-info {
-        position: sticky;
-        top: var(--spacing-lg);
-    }
+.btn-custom:hover {
+  background-color: var(--color-azul-noche);
+  opacity: 0.9;
+  color: var(--color-crema);
 }
 
-fieldset {
-    border: 1px solid var(--color-gris-asfalto);
-    border-radius: 6px;
-    padding: var(--spacing-md);
-    margin-bottom: var(--spacing-lg);
+.btn-custom:focus {
+  box-shadow: 0 0 0 3px var(--color-naranja-pedal) !important;
 }
 
-fieldset div {
-    display: block;
-    margin-bottom: var(--spacing-md);
+.custom-link {
+  color: var(--color-azul-noche);
 }
 
-fieldset div label {
-    display: block;
-    font-weight: 600;
+.custom-link:hover {
+  text-decoration: underline !important;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="date"],
-select,
-textarea {
-    display: block;
-    width: 100%;
-    padding: var(--spacing-md);
-    margin-top: var(--spacing-sm);
-    border: 1px solid var(--color-gris-asfalto);
-    border-radius: 4px;
-}
-
-input:focus,
-select:focus,
-textarea:focus {
-    outline: none;
-    border-color: var(--color-azul-noche);
-    box-shadow: 0 0 0 3px var(--color-naranja-pedal);
-}
-
-button[type="submit"] {
-    background-color: var(--color-azul-noche);
-    color: var(--color-crema);
-    padding: var(--spacing-md) var(--spacing-lg);
-    border: none;
-    border-radius: 4px;
-    font-weight: 600;
-    cursor: pointer;
-    font-family: var(--font-headings);
-}
-
-button[type="submit"]:focus {
-    outline: 3px solid var(--color-naranja-pedal);
-}
-
-.fila-campos {
-    display: grid;
-    gap: 0 var(--spacing-md);
-}
-
-.fila-campos > div {
-    margin-bottom: var(--spacing-md);
-}
-
-@media (min-width: 768px) {
-    .fila-campos {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: var(--spacing-lg);
-    background-color: #ffffff;
-    table-layout: fixed; 
-}
-
-table, th, td {
-    border: 1px solid var(--color-gris-asfalto);
-}
-
-th, td {
-    padding: var(--spacing-sm);
-    text-align: left;
-    font-size: 0.85rem;
-    word-wrap: break-word;
-}
-
-thead th {
-    background-color: var(--color-azul-noche);
-    color: var(--color-crema);
-}
-
-@media (min-width: 768px) {
-    table {
-        table-layout: auto;
-    }
-    th, td {
-        padding: var(--spacing-sm) var(--spacing-md);
-        font-size: 1rem;
-    }
+/* Efecto Sticky personalizado para el elemento lateral desde xl (1200px) */
+@media (min-width: 1200px) {
+  .reservas-info-sticky {
+    position: sticky;
+    top: 2rem;
+  }
 }
 
 footer {
@@ -467,5 +380,135 @@ footer {
     .btn-whatsapp {
         bottom: var(--spacing-lg);
         right: var(--spacing-lg);
+    }
+}
+
+@media (max-width: 575px) {
+    /* Convierte la fila contenedora en una tarjeta individual separada */
+    .container .row.tabla-movil-tarjeta {
+        display: block !important;
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        margin-bottom: 1.5rem !important;
+        padding: 0.5rem !important;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    }
+
+    /* Forzar a cada celda (columna) a ocupar el 100% del ancho disponible */
+    .container .row.tabla-movil-tarjeta [class*="col-"] {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+        text-align: right !important;
+        border: none !important;
+        border-bottom: 1px solid #f0f0f0 !important;
+        padding: 0.5rem 0.25rem !important;
+    }
+
+    /* Elimina el borde inferior de la última celda para que no se duplique con el de la tarjeta */
+    .container .row.tabla-movil-tarjeta [class*="col-"]:last-child {
+        border-bottom: none !important;
+    }
+
+    /* Elimina márgenes de los párrafos para que no empujen el diseño */
+    .container .row.tabla-movil-tarjeta p {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Inyecta el texto del encabezado alineado a la izquierda */
+    .container .row.tabla-movil-tarjeta [class*="col-"]::before {
+        content: attr(data-label);
+        font-weight: bold;
+        text-align: left !important;
+        color: #495057;
+        flex-shrink: 0; /* Evita que el título se encoja si es largo */
+        padding-right: 15px;
+    }
+}
+
+/* ==========================================
+   1. ESTILOS PARA ESCRITORIO (Pantallas grandes)
+   ========================================== */
+
+/* Fondo general simulando la etiqueta 'table' */
+.container .row.border {
+    background-color: #ffffff;
+}
+
+/* Bordes de las celdas simulando 'table, th, td' */
+.container .row [class*="col-"].border {
+    border: 1px solid var(--color-gris-asfalto) !important;
+}
+
+/* Encabezados simulando 'thead th' (Aplicado a la fila que ocultamos en móvil) */
+.container .row.d-none.d-sm-flex {
+    background-color: var(--color-azul-noche) !important;
+}
+.container .row.d-none.d-sm-flex [class*="col-"] p {
+    color: var(--color-crema) !important;
+    font-weight: bold;
+}
+
+
+/* ==========================================
+   2. ESTILOS PARA MÓVIL (< 576px) 
+   Se adaptan las variables a la estructura de tarjetas
+   ========================================== */
+@media (max-width: 575.98px) {
+    /* La tarjeta toma el fondo blanco de la 'table' */
+    .container .row.tabla-movil-tarjeta {
+        display: block !important;
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        margin-bottom: 1.5rem !important;
+        padding: 0.5rem !important;
+        background-color: #ffffff; /* Tu fondo de table */
+        border: 1px solid var(--color-gris-asfalto) !important; /* Borde exterior */
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    /* Cada fila interna de la tarjeta */
+    .container .row.tabla-movil-tarjeta [class*="col-"] {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+        text-align: right !important;
+        border: none !important;
+        /* Separador interno usando el gris asfalto */
+        border-bottom: 1px solid var(--color-gris-asfalto) !important; 
+        padding: 0.5rem 0.25rem !important;
+    }
+
+    .container .row.tabla-movil-tarjeta [class*="col-"]:last-child {
+        border-bottom: none !important;
+    }
+
+    .container .row.tabla-movil-tarjeta p {
+        margin: 0 !important;
+        padding: 0 !important;
+        color: #212529; /* Color del texto del dato */
+    }
+
+    /* Los títulos inyectados a la izquierda actúan como los 'th' */
+    .container .row.tabla-movil-tarjeta [class*="col-"]::before {
+        content: attr(data-label);
+        font-weight: bold;
+        text-align: left !important;
+        /* Estilos basados en tu 'thead th' para mantener coherencia */
+        color: var(--color-azul-noche); 
+        flex-shrink: 0;
+        padding-right: 15px;
     }
 }

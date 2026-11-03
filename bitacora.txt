@@ -250,3 +250,24 @@ section > header,
 }
 El codigo de color: var no se utiliza/tachado
 Solucion: Borrarlo
+
+Semana 2: Dia 2: MiniReto 8:
+En total despues de todos los cambios se redujeron 20 lineas de codigo en el css, (esto por la reestructuracion del mismo con ia y la optimizacion del uso de bootstrap)
+Tiempo aproximado de cada version:
+CSS: 4 Horas, complicado de entender al incio, aunque con el tiempo se vuelve relativamente sencillo, solo es de recordar bastantes propiedades y saber usarlas.
+Bootstrap: 5 Horas, a pesar de que bootstrap para cosas sencillas es valga la redundancia, mas sencillo, en el momento que toca hacer cosas mas especificas como tablas con tamaños (lg-2, md-5 etc), se vuelve mas complicado ademas del necesitar de implementar el css a las nuevas tablas de bootstrap
+
+Ventajas: CSS
+Mejor para dar colores, estilos generales de la pagina y mas sencillo en cosas complejas
+
+Desventajas:
+Sigue siendo dificil de entender y lleva mucho tiempo construyendose
+
+Ventajas: Bootstrap
+Facil de entender en lo basico, lleva menos lineas de codigo y si se tiene un buen nivel de manejo se usa de forma muy sencilla
+
+Desventajas:
+Se vuelve muy dificil al momento de hacer cosas complejas y que funcionen en todos los tamaños de pantalla
+
+Conclusion:
+En una pagina lo mejor sera convinar ambos, cada uno se complemente con el otro aportando cosas que se les da mejor, asi ayudandose mutuamente y haciendo que una pagina se vea mucho mejor

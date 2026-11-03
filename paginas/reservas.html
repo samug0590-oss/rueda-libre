@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rueda libre | Reservas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
@@ -19,115 +21,124 @@
         </div>
     </header>
 
-    <main class="reservas-layout">
-        <section class="reservas-form">
-            <header>
-                <h1>Formulario de reserva</h1>
-            </header>
-            <form action="submit" method="post">
-                <fieldset>
-                    <legend>Tus datos</legend>
-                    <div>
-                        <label for="nombre">Nombre completo</label>
-                        <input type="text" id="nombre" name="nombre" minlength="3" required>
+    <main class="container my-5">
+        <div class="row g-4 align-items-start position-relative">
+        
+            <section class="col-md-8">
+                <header class="mb-4">
+                    <h1 class="h2 fw-bold text-white">Formulario de reserva</h1>
+                </header>
+                <form action="submit" method="post">
+                    
+                    <fieldset class="border rounded p-4 mb-4">
+                    <legend class="float-none w-auto px-2 h6 fw-bold text-secondary">Tus datos</legend>
+                    
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label fw-semibold">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" minlength="3" required class="form-control customs-input">
                     </div>
 
-                    <div class="fila-campos">
-                        <div>
-                            <label for="documento">Numero de documento</label>
-                            <input type="tel" id="documento" name="documento" pattern="[0-9]{6,10}" title="Entre 6 y 10 digitos" required>
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                        <label for="documento" class="form-label fw-semibold">Número de documento</label>
+                        <input type="tel" id="documento" name="documento" pattern="[0-9]{6,10}" title="Entre 6 y 10 dígitos" required class="form-control customs-input">
                         </div>
 
-                        <div>
-                            <label for="numero">Numero de celular</label>
-                            <input type="tel" id="numero" name="numero" pattern="3[0-9]{9}" title="El numero debe empezar con 3 y tener 10 digitos exactos" required>
+                        <div class="col-md-6">
+                        <label for="numero" class="form-label fw-semibold">Número de celular</label>
+                        <input type="tel" id="numero" name="numero" pattern="3[0-9]{9}" title="El número debe empezar con 3 y tener 10 dígitos exactos" required class="form-control customs-input">
                         </div>
                     </div>
 
-                    <div>
-                        <label for="correo">Correo electronico</label>
-                        <input type="email" id="correo" name="correo" required>
+                    <div class="mb-2">
+                        <label for="correo" class="form-label fw-semibold">Correo electrónico</label>
+                        <input type="email" id="correo" name="correo" required class="form-control customs-input">
                     </div>
-                </fieldset>
+                    </fieldset>
 
-                <fieldset>
-                <legend>Tu alquiler</legend>
-                    <div>
-                        <label for="fecha">Fecha del alquiler</label>
-                        <input type="date" id="fecha" name="fecha" min="2026-11-01" max="2026-12-31" required>
+                    <fieldset class="border rounded p-4 mb-4">
+                    <legend class="float-none w-auto px-2 h6 fw-bold text-secondary">Tu alquiler</legend>
+                    
+                    <div class="mb-3">
+                        <label for="fecha" class="form-label fw-semibold">Fecha del alquiler</label>
+                        <input type="date" id="fecha" name="fecha" min="2026-11-01" max="2026-12-31" required class="form-control customs-input">
                     </div>
 
-                    <div>
-                        <label for="tipo">Tipo de bicicleta</label>
-                        <select name="tipo" id="tipo" required>
-                            <option value="mt">Bicicleta de montaña</option>
-                            <option value="urba">Bicicleta urbana</option>
-                            <option value="elec">Bicicleta electrica</option>
+                    <div class="mb-3">
+                        <label for="tipo" class="form-label fw-semibold">Tipo de bicicleta</label>
+                        <select name="tipo" id="tipo" required class="form-select customs-input">
+                        <option value="mt">Bicicleta de montaña</option>
+                        <option value="urba">Bicicleta urbana</option>
+                        <option value="elec">Bicicleta eléctrica</option>
                         </select>
                     </div>
 
-                    <div>
-                        <label for="plan">Plan</label>
-                        <select name="plan" id="plan" required>
-                            <option value="1h">1 hora</option>
-                            <option value="mediod">Medio dia (4 horas)</option>
-                            <option value="1d">Dia completo</option>
+                    <div class="mb-3">
+                        <label for="plan" class="form-label fw-semibold">Plan</label>
+                        <select name="plan" id="plan" required class="form-select customs-input">
+                        <option value="1h">1 hora</option>
+                        <option value="mediod">Medio día (4 horas)</option>
+                        <option value="1d">Día completo</option>
                         </select>
                     </div>
 
-                    <div>
-                        <label for="cantidadbici">Cantidad de bicicletas</label>
-                        <select name="cantidadbici" id="cantidadbici" required>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
+                    <div class="mb-3">
+                        <label for="cantidadbici" class="form-label fw-semibold">Cantidad de bicicletas</label>
+                        <select name="cantidadbici" id="cantidadbici" required class="form-select customs-input">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
                         </select>
                     </div>
 
-                    <div>
-                        <label for="ruta">Ruta</label>
-                        <select name="ruta" id="ruta" required>
-                            <option value="ninguna">Ninguna</option>
-                            <option value="rio">Rio y Parques</option>
-                            <option value="barrio">Sabores de Barrio</option>
-                            <option value="palmas">Retro Las Palmas</option>
+                    <div class="mb-2">
+                        <label for="ruta" class="form-label fw-semibold">Ruta</label>
+                        <select name="ruta" id="ruta" required class="form-select customs-input">
+                        <option value="ninguna">Ninguna</option>
+                        <option value="rio">Río y Parques</option>
+                        <option value="barrio">Sabores de Barrio</option>
+                        <option value="palmas">Retro Las Palmas</option>
                         </select>
                     </div>
-                </fieldset>
-                
-                <fieldset>
-                    <legend>Confirmacion</legend>
-                    <div>
-                        <label for="comentarios">Dejanos un comentario, puede ser una duda, sugerencia o cosas a tener en cuenta</label><br>
-                        <textarea name="comentarios" id="comentarios" maxlength="300" title="Debe contener menos de 300 caracteres"></textarea>
+                    </fieldset>
+                    
+                    <fieldset class="border rounded p-4 mb-4">
+                    <legend class="float-none w-auto px-2 h6 fw-bold text-secondary">Confirmación</legend>
+                    
+                    <div class="mb-3">
+                        <label for="comentarios" class="form-label fw-semibold">Déjanos un comentario, puede ser una duda, sugerencia o cosas a tener en cuenta</label>
+                        <textarea name="comentarios" id="comentarios" maxlength="300" title="Debe contener menos de 300 caracteres" class="form-control customs-input" style="height: 100px;"></textarea>
+                    </div>
+
+                    <div class="form-check mb-4">
+                        <input type="checkbox" id="politicas" name="politicas" required class="form-check-input">
+                        <label for="politicas" class="form-check-label fw-semibold">Aceptación de las políticas de alquiler</label>
                     </div>
 
                     <div>
-                        <label for="politicas">Aceptacion de las politicas de alquiler</label>
-                        <input type="checkbox" id="politicas" name="politicas" required>
+                        <button type="submit" class="btn btn-custom px-4 py-2fw-bold">Enviar</button>
                     </div>
+                    </fieldset>
+                </form>
+            </section>
 
-                    <div>
-                        <button type="submit">Enviar</button>
-                    </div>
-                </fieldset>
-            </form>
-        </section>
-
-        <aside class="reservas-info">
-            <h2>Contacto y horarios</h2>
-            <p><a href="mailto:reservas@ruedalibre.example">reservas@ruedalibre.example</a></p>
-            <p><a href="https://wa.me/573000000000">Escríbenos por WhatsApp</a></p>
-            <dl>
-                <dt>Lunes a viernes</dt>
-                <dd>7:00 a. m. a 7:00 p. m.</dd>
-                <dt>Sábados, domingos y festivos</dt>
-                <dd>10:00 a. m. a 4:00 p. m.</dd>
-            </dl>
-        </aside>
+            <aside class="col-md-4 reservas-info-sticky card border-0 bg-light p-4">
+                <h2 class="h4 fw-bold text-dark mb-3">Contacto y horarios</h2>
+                <div class="mb-3">
+                    <p class="mb-1"><a href="mailto:reservas@ruedalibre.example" class="text-decoration-none custom-link">reservas@ruedalibre.example</a></p>
+                    <p class="mb-0"><a href="https://wa.me" class="text-decoration-none custom-link">Escríbenos por WhatsApp</a></p>
+                </div>
+                    <dl class="mb-0">
+                        <dt class="fw-bold text-secondary mt-2">Lunes a viernes</dt>
+                        <dd class="text-muted mb-1">7:00 a. m. a 7:00 p. m.</dd>
+                        <dt class="fw-bold text-secondary mt-2">Sábados, domingos y festivos</dt>
+                        <dd class="text-muted mb-0">10:00 a. m. a 4:00 p. m.</dd>
+                    </dl>
+            </aside>
+        </div>
     </main>
 
     <footer>
@@ -150,5 +161,6 @@
     </footer>
 
     <a href="https://wa.me/573000000000" class="btn-whatsapp" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
 </body>
 </html>
