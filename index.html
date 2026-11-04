@@ -11,10 +11,28 @@
 </head>
 <body>
     <header>
-        <nav id="menu">
-            <a href="index.html" class="activo">Inicio</a>
-            <a href="paginas/tarifas.html" class="btn-cta">Tarifas</a>
-            <a href="paginas/reservas.html" class="btn-cta">Reservas</a>
+        <nav class="navbar navbar-expand-lg btn-cola menu">
+            <div class="container">
+                <button class="navbar-toggler menu" type="button"
+                data-bs-toggle="collapse" data-bs-target="#menu-principal"
+                aria-controls="menu-principal" aria-expanded="false"
+                aria-label="Abrir menu de navegacion">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse menu" id="menu-principal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="btn-cta nav-link active ms-auto" aria-current="page">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="paginas/tarifas.html" class="btn-cta nav-link">Tarifas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="paginas/reservas.html" class="btn-cta nav-link">Reservas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
         <div class="marca-contenedor">
             <h1>Rueda Libre</h1>
@@ -30,7 +48,7 @@
                     <p>Alquila una bicicleta y recorre tus rutas favoritas</p>
                 </div>
 
-                <div class="portada__imagen">
+                <div class="portada__imagen" >
                     <img src="./imagenes/diseño-de-logotipo-bicicleta-pictograma-vectorial-coloreado-459296016.webp" alt="Logo de bicicleta minimalista">
                 </div>
         </section>
@@ -41,104 +59,106 @@
             </header>
 
             <div class="container">
-                <div class="row g-4">
-                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                        <div class="p-3 border rounded bg-body-tertiary">
-                            <fieldset>
-                                <article class="bici">
-                                    <img src="./imagenes/urbana.jpeg" alt="Bicicleta urbana" class="img-fluid">
-                                    <h3>Urbana clasica</h3>
-                                    <p>Cómoda y liviana para las ciclorrutas.</p><br>
-                                    <h4>Precio por hora: $10.000</h4>
-                                    <a href="paginas/reservas.html" class="btn-cta" >Reservar</a>
-                                </article>
-                            </fieldset>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 g-4">
+                    <div class="col">
+                        <div class="card h-100 border bg-body-tertiary">
+                            <img src="./imagenes/urbana.jpeg" alt="Bicicleta urbana" class="card-img-top img-fluid">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title">Urbana clásica</h3>
+                                <p class="card-text">Cómoda y liviana para las ciclorrutas.</p>
+                                <!-- mt-auto empuja el precio y el botón al fondo para alinearlos perfectamente -->
+                                <div class="mt-auto">
+                                    <h4 class="h5">Precio por hora: $10.000</h4>
+                                    <a href="paginas/reservas.html" class="btn-cta w-100 d-inline-block text-center">Reservar</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                        <div class="p-3 border rounded bg-body-tertiary">
-                            <fieldset>
-                                <article class="bici">
-                                    <img src="./imagenes/plegable.jpg" alt="Bicicleta urbana plegable" class="img-fluid">
-                                    <h3>Urbana Plegable</h3>
-                                    <p>Se dobla en segundos; ideal para combinar con el metro.</p>
-                                    <h4>Precio por hora: $12.000</h4>
-                                    <a href="paginas/reservas.html" class="btn-cta" >Reservar</a>
-                                </article>
-                            </fieldset>
+                    <div class="col">
+                        <div class="card h-100 border bg-body-tertiary">
+                            <img src="./imagenes/plegable.jpg" alt="Bicicleta urbana plegable" class="card-img-top img-fluid">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title">Urbana Plegable</h3>
+                                <p class="card-text">Se dobla en segundos; ideal para combinar con el metro.</p>
+                                <div class="mt-auto">
+                                    <h4 class="h5">Precio por hora: $12.000</h4>
+                                    <a href="paginas/reservas.html" class="btn-cta w-100 d-inline-block text-center">Reservar</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                        <div class="p-3 border rounded bg-body-tertiary">
-                            <fieldset>
-                                <article class="bici">
-                                    <img src="./imagenes/trail.jpeg" alt="Bicicleta de montaña trail" class="img-fluid">
-                                    <h3>Montaña Trail</h3>
-                                    <p>Suspensión delantera y 21 cambios para las subidas.</p><br>  
-                                    <h4>Precio por hora: $15.000</h4>
-                                    <a href="paginas/reservas.html" class="btn-cta" >Reservar</a>
-                                </article>
-                            </fieldset>
+                    <div class="col">
+                        <div class="card h-100 border bg-body-tertiary">
+                            <img src="./imagenes/trail.jpeg" alt="Bicicleta de montaña trail" class="card-img-top img-fluid">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title">Montaña Trail</h3>
+                                <p class="card-text">Suspensión delantera y 21 cambios para las subidas.</p>
+                                <div class="mt-auto">
+                                    <h4 class="h5">Precio por hora: $15.000</h4>
+                                    <a href="paginas/reservas.html" class="btn-cta w-100 d-inline-block text-center">Reservar</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                        <div class="p-3 border rounded bg-body-tertiary">
-                            <fieldset>
-                                <article class="bici">
-                                    <img src="./imagenes/gravel.jpeg" alt="Bicicleta gravel aventurera" class="img-fluid">
-                                    <h3>Gravel Aventura</h3>
-                                    <p>Para rutas mixtas de asfalto y destapado.</p><br>
-                                    <h4>Precio por hora: $18.000</h4>
-                                    <a href="paginas/reservas.html" class="btn-cta" >Reservar</a>
-                                </article>
-                            </fieldset>
+                    <div class="col">
+                        <div class="card h-100 border bg-body-tertiary">
+                            <img src="./imagenes/gravel.jpeg" alt="Bicicleta gravel aventurera" class="card-img-top img-fluid">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title">Gravel Aventura</h3>
+                                <p class="card-text">Para rutas mixtas de asfalto y destapado.</p>
+                                <div class="mt-auto">
+                                    <h4 class="h5">Precio por hora: $18.000</h4>
+                                    <a href="paginas/reservas.html" class="btn-cta w-100 d-inline-block text-center">Reservar</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                        <div class="p-3 border rounded bg-body-tertiary">
-                            <fieldset>
-                                <article class="bici">
-                                    <img src="./imagenes/electrica.jpeg" alt="Bicicleta electrica urbana" class="img-fluid">
-                                    <h3>Eléctrica Urbana</h3>
-                                    <p>Asistencia eléctrica con 45 km de autonomía.</p>
-                                    <h4>Precio por hora: $25.000</h4>
-                                    <a href="paginas/reservas.html" class="btn-cta" >Reservar</a>
-                                </article>
-                            </fieldset>
+                    <div class="col">
+                        <div class="card h-100 border bg-body-tertiary">
+                            <img src="./imagenes/electrica.jpeg" alt="Bicicleta electrica urbana" class="card-img-top img-fluid">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title">Eléctrica Urbana</h3>
+                                <p class="card-text">Asistencia eléctrica con 45 km de autonomía.</p>
+                                <div class="mt-auto">
+                                    <h4 class="h5">Precio por hora: $25.000</h4>
+                                    <a href="paginas/reservas.html" class="btn-cta w-100 d-inline-block text-center">Reservar</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                        <div class="p-3 border rounded bg-body-tertiary">
-                            <fieldset>
-                                <article class="bici">
-                                    <img src="./imagenes/infantil.jpeg" alt="Bicicleta pequeña infantil" class="img-fluid">
-                                    <h3>Infantil</h3>
-                                    <p>Para niños de 6 a 10 años.</p><br>
-                                    <h4>Precio por hora: $8.000</h4>
-                                    <a href="paginas/reservas.html" class="btn-cta" >Reservar</a>
-                                </article>
-                            </fieldset>
+                    <div class="col">
+                        <div class="card h-100 border bg-body-tertiary">
+                            <img src="./imagenes/infantil.jpeg" alt="Bicicleta pequeña infantil" class="card-img-top img-fluid">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title">Infantil</h3>
+                                <p class="card-text">Para niños de 6 a 10 años.</p>
+                                <div class="mt-auto">
+                                    <h4 class="h5">Precio por hora: $8.000</h4>
+                                    <a href="paginas/reservas.html" class="btn-cta w-100 d-inline-block text-center">Reservar</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                        <div class="p-3 border rounded bg-body-tertiary">
-                            <fieldset>
-                                <article class="bici">
-                                    <img src="./imagenes/tandem.jpeg" alt="Bicicleta tandem para 2 personas" class="img-fluid">
-                                    <h3>Tandem</h3>
-                                    <p>Perfecta para pasear en pareja</p>
-                                    <h4>Precio por hora: $20.000</h4>
-                                    <a href="./paginas/reservas.html" class="btn-cta" >Reservar</a>
-                                </article>
-                            </fieldset>
+                    <div class="col">
+                        <div class="card h-100 border bg-body-tertiary">
+                            <img src="./imagenes/tandem.jpeg" alt="Bicicleta tandem para 2 personas" class="card-img-top img-fluid">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title">Tandem</h3>
+                                <p class="card-text">Perfecta para pasear en pareja.</p>
+                                <div class="mt-auto">
+                                    <h4 class="h5">Precio por hora: $20.000</h4>
+                                    <a href="paginas/reservas.html" class="btn-cta w-100 d-inline-block text-center">Reservar</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -149,47 +169,44 @@
             </header>
 
             <div class="container">
-                <div class="row g-3">
-                    <div class="col-12 col-md-4">
-                        <div class="p-3 border rounded bg-body-tertiary">
-                            <fieldset>
-                                <article class="ruta">
-                                    <h3>Rio y Parques</h3>
-                                    <p>Nivel: Facil</p>
-                                    <a href="./paginas/tarifas.html#2" class="btn-cta" >Descubre las tarifas de las Experiencias</a>
-                                    <img src="./imagenes/rios.avif" alt="Imagen de ruta Rio y Parques">
-                                </article>
-                            </fieldset>
-                        </div>
+                <div class="row row-cols-12 row-cols-md-3 g-4">
+                    <div class="col p-3 rounded bg-body-tertiary">
+                        <article class="card h-100 ruta">
+                            <img src="./imagenes/rios.avif" alt="Imagen de ruta Rio y Parques" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">Rio y Parques</h3>
+                                <div class="mt-auto">
+                                    <p class="card-text">Nivel: Facil</p>
+                                    <a href="./paginas/tarifas.html#2" class="btn-cta w-100 d-inline-block text-center" >Descubre las tarifas de las Experiencias</a>
+                                </div>
+                            </div>
+                        </article>
                     </div>
-
-                    <div class="col-12 col-md-4">
-                        <div class="p-3 border rounded bg-body-tertiary">
-                            <fieldset>
-                                <article class="ruta"> 
+            
+                    <div class="col p-3 rounded bg-body-tertiary">
+                        <article class="card h-100 ruta"> 
+                            <img src="./imagenes/barrio.avif" alt="Imagen de ruta Sabores de barrio" class="card-img-top">
+                            <div class="card-body d-flex flex-column">
+                                <div class="mt-auto">
                                     <h3>Sabores de Barrio</h3>
                                     <p>Nivel: Medio</p>
-                                    <a href="./paginas/tarifas.html#2" class="btn-cta" >Descubre las tarifas de las Experiencias</a>
-                                    <br>
-                                    <img src="./imagenes/barrio.avif" alt="Imagen de ruta Sabores de barrio">
-                                </article>
-                            </fieldset>
-                        </div>
+                                    <a href="./paginas/tarifas.html#2" class="btn-cta w-100 d-inline-block text-center" >Descubre las tarifas de las Experiencias</a>
+                                </div>
+                            </div>
+                        </article>
                     </div>
-                    
-                    <div class="col-12 col-md-4">
-                        <div class="p-3 border rounded bg-body-tertiary">
-                            <fieldset>
-                                <article class="ruta">
-                                    <h3>Retro las Palmas</h3>
-                                    <p>Nivel: Dificil</p>
-                                    <a href="./paginas/tarifas.html#2" class="btn-cta" >Descubre las tarifas de las Experiencias</a>
-                                    <br>
-                                    <img src="./imagenes/palmas.jpg" alt="Imagen de ruta Retro las palmas">
-                                </article>
-                            </fieldset>
-                        </div>
-                    </div>  
+                
+                    <div class="col p-3 rounded bg-body-tertiary">
+                        <article class="card h-100 ruta">
+                            <img src="./imagenes/palmas.jpg" alt="Imagen de ruta Retro las palmas" class="card-img-top">
+                            <div class="card-body d-flex flex-column">  
+                                <div class="mt-auto">
+                                    <h3 class="card-title">Retro las Palmas</h3>
+                                    <p class="card-text">Nivel: Dificil</p>
+                                    <a href="./paginas/tarifas.html#2" class="btn-cta w-100 d-inline-block text-center" >Descubre las tarifas de las Experiencias</a>
+                                </div>
+                        </article>
+                    </div>
                 </div> 
             </div>
         </section>
